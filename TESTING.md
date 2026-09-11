@@ -1,10 +1,10 @@
-# Review verification · September 10, 2026
+# Verification · September 10, 2026
 
 `node --test tests/*.test.cjs`: 9/9 tests passed (six codec tests and three presentation-map tests). Includes compatibility with the archived React core on ASCII inputs, all 26 one-letter and 676 two-letter rings with every candidate re-encrypted, ROT13 invariance, Unicode scalar preservation, invalid loops, malformed surrogates and nesting boundaries. Presentation tests pin the exact house and selected Font Garden alphabets and confirm non-ASCII scalar text is not normalized.
 
 `node tests/browser-smoke.cjs`: passed using development-only Playwright and Chrome for Testing 151.0.7922.34. The demo opened directly from `file://`, exercised all four modes with exact emoji-bearing outputs, showed both valid readings, rejected an invalid ring, and rendered at 1280px and 390px. The browser audit found no plain ASCII narrative outside protected literal data and accessible text. Plain accessible control names and keyboard range adjustment passed. No external HTTP requests or uncaught page errors occurred. Both screenshots were visually inspected for clipping and legibility. Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to a local Chromium executable when the default Playwright channel is unavailable.
 
-Only the browser smoke needs Playwright; the core suite uses Node's standard library. Screenshots are in ignored `output/`. No model selection of a preferred decoding is included or presented as exact recovery.
+Only the browser smoke needs Playwright; the core suite uses Node's standard library. Screenshots are in ignored `output/`. The decoder returns the complete candidate set for the reader to explore.
 
 The presentation update leaves `core.js` and all three recovered source artifacts byte-identical. The marked README carrier also remains byte-identical (SHA-256 `85f785b7f834a204a151145122365b3337d11e009be61cbdb018fb21d0146f64`) and preserves the same six-letter reading using Uniception's legacy Two Plains region decoder. Decorative body lettering is outside that region.
 

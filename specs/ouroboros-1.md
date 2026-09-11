@@ -22,6 +22,6 @@ The original ROT13 theorem follows because adding 13 to both consecutive plainte
 
 ## Transport and interpretation
 
-There is no checksum, authentication, secret key, or automatic format detection. Editing, normalizing or losing an ASCII letter may make a different valid ring or no ring. Nonletter mutations cannot be detected by this cipher. Multiple encryption passes remain ambiguous on decoding. Human or model plausibility rankings must be labeled interpretations, never exact recovery.
+The ring is keyless and unframed: the source supplies its own shifts. Editing, normalizing or losing an ASCII letter changes the ring; nonletters pass through without integrity checking. Multiple encryption passes retain multiple readings on decoding. The decoder supplies the full candidate set, and human or model interpretation selects among those readings. The format includes no checksum or authentication.
 
 This continuation fixes the recovered TSX decoder's UTF-16/code-point indexing mismatch and avoids Python `.isalpha()` treating non-ASCII letters as members of a 26-letter alphabet. Original artifacts remain unmodified as historical evidence.

@@ -23,12 +23,12 @@
         const list = node("ol", "", "solutions");
         for (const candidate of decoded.candidates) { const item = node("li", ""); item.append(node("small", candidate.seed === null ? "Unchanged nonletter text" : `Closure seed ${candidate.seed}`), node("span", candidate.text, "literal")); list.append(item); }
         result.append(list);
-        if (!decoded.candidates.length) result.append(node("p", "No seed closes this ring. The ciphertext may be malformed or altered.", "output"));
+        if (!decoded.candidates.length) result.append(node("p", "No seed closes this ring. Check the ciphertext and try again.", "output"));
       } else if (mode === "nest") {
         const layers = Ouroboros.nest(text, Number(depth.value));
         const list = node("ol", "", "solutions");
         layers.forEach((value, index) => { const item = node("li", ""); item.append(node("small", index ? `Pass ${index}${value === text ? " · returned to the original" : ""}` : "Original"), node("span", value, "literal")); list.append(item); });
-        result.append(list); status.textContent = "Repeated forward transforms. Nesting does not resolve decoder ambiguity.";
+        result.append(list); status.textContent = "Repeated forward transforms. Each layer keeps the ring's many readings.";
       } else {
         const encrypted = Ouroboros.encrypt(text);
         const twin = Ouroboros.rot13(text);
