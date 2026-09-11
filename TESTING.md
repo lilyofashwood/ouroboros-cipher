@@ -6,4 +6,6 @@
 
 Only the browser smoke needs Playwright; the core suite uses Node's standard library. Screenshots are in ignored `output/`. No model selection of a preferred decoding is included or presented as exact recovery.
 
-The presentation update leaves `core.js` and all three recovered source artifacts byte-identical. The marked README carrier also remains byte-identical (SHA-256 `85f785b7f834a204a151145122365b3337d11e009be61cbdb018fb21d0146f64`) and decodes to `Return` using Uniception's legacy Two Plains region decoder. Decorative body lettering is outside that region.
+The presentation update leaves `core.js` and all three recovered source artifacts byte-identical. The marked README carrier also remains byte-identical (SHA-256 `85f785b7f834a204a151145122365b3337d11e009be61cbdb018fb21d0146f64`) and preserves the same six-letter reading using Uniception's legacy Two Plains region decoder. Decorative body lettering is outside that region.
+
+GitHub Pages was enabled from `main` / root after the source push. HTTP GET returned 200 for the page and all four runtime assets, each byte-identical to the tested local files. The same complete browser smoke then passed against the live site at desktop and mobile widths. To repeat it, set `OUROBOROS_DEMO_URL=https://lilyofashwood.github.io/ouroboros-cipher/`; same-origin page assets are allowed, while any cross-origin request still fails the smoke.

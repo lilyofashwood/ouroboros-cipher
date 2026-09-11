@@ -7,10 +7,11 @@ const { pathToFileURL } = require("node:url");
   const browser = await chromium.launch({ ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH } : { channel: "chromium" }), headless: true });
   try {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+    const target = process.env.OUROBOROS_DEMO_URL || pathToFileURL(path.resolve(__dirname, "../index.html")).href;
     const errors = [], external = [];
     page.on("pageerror", (error) => errors.push(error.message));
-    page.on("request", (request) => { if (/^https?:/.test(request.url())) external.push(request.url()); });
-    await page.goto(pathToFileURL(path.resolve(__dirname, "../index.html")).href);
+    page.on("request", (request) => { if (/^https?:/.test(request.url()) && new URL(request.url()).origin !== new URL(target).origin) external.push(request.url()); });
+    await page.goto(target);
     const assertNarrative = async () => {
       const leaks = await page.evaluate(() => {
         const walker = document.createTreeWalker(document.querySelector('main'), NodeFilter.SHOW_TEXT), found = [];
@@ -58,6 +59,6 @@ const { pathToFileURL } = require("node:url");
     await page.screenshot({ path: path.resolve(__dirname, "../output/demo-mobile.png"), fullPage: true });
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     assert.deepEqual(errors, []); assert.deepEqual(external, []);
-    console.log(`PASS Ouroboros offline file demo: all four modes, exact scalar outputs, invalid ring, full narrative typography, plaintext accessible names, keyboard depth, desktop/mobile; no external requests or page errors. Chrome ${browser.version()}`);
+    console.log(`PASS Ouroboros ${target.startsWith('file:') ? 'offline file' : 'hosted'} demo: all four modes, exact scalar outputs, invalid ring, full narrative typography, plaintext accessible names, keyboard depth, desktop/mobile; no external requests or page errors. Chrome ${browser.version()}`);
   } finally { await browser.close(); }
 })().catch((error) => { console.error(error); process.exitCode = 1; });
