@@ -58,6 +58,16 @@ const { pathToFileURL } = require("node:url");
     await page.setViewportSize({ width: 390, height: 844 });
     await page.screenshot({ path: path.resolve(__dirname, "../output/demo-mobile.png"), fullPage: true });
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    for (const mode of ['encode','decode','twin','nest']) {
+      const route = new URL(target); route.searchParams.set('mode', mode);
+      await page.goto(route.href);
+      assert.equal(await page.getAttribute('[aria-pressed="true"]', 'data-mode'), mode);
+      assert.equal(await page.locator('#depth-control').isVisible(), mode === 'nest');
+      await assertNarrative();
+    }
+    const invalid = new URL(target); invalid.searchParams.set('mode', '<script>');
+    await page.goto(invalid.href);
+    assert.equal(await page.getAttribute('[aria-pressed="true"]', 'data-mode'), 'encode');
     assert.deepEqual(errors, []); assert.deepEqual(external, []);
     console.log(`PASS Ouroboros ${target.startsWith('file:') ? 'offline file' : 'hosted'} demo: all four modes, exact scalar outputs, invalid ring, full narrative typography, plaintext accessible names, keyboard depth, desktop/mobile; no external requests or page errors. Chrome ${browser.version()}`);
   } finally { await browser.close(); }

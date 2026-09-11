@@ -1,6 +1,7 @@
 (function () {
   "use strict";
-  let mode = "encode";
+  const requestedMode = new URLSearchParams(location.search).get("mode");
+  let mode = ["encode", "decode", "twin", "nest"].includes(requestedMode) ? requestedMode : "encode";
   const input = document.querySelector("#input");
   const result = document.querySelector("#result");
   const status = document.querySelector("#status");
@@ -41,6 +42,7 @@
     dress(document.querySelector("main"));
   }
   document.querySelectorAll("[data-mode]").forEach((button) => button.addEventListener("click", () => { mode = button.dataset.mode; document.querySelectorAll("[data-mode]").forEach((other) => other.setAttribute("aria-pressed", String(other === button))); render(); }));
+  document.querySelectorAll("[data-mode]").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.mode === mode)));
   document.title = lettering(document.title);
   input.addEventListener("input", render); depth.addEventListener("input", render); render();
 })();
