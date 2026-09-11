@@ -60,3 +60,13 @@ if a second voice becomes visible:
 ```
 
 𝗍𝗁𝐞 𝗌𝐞𝗋𝗉𝐞𝗇𝗍 𝗅𝐞𝐚𝗏𝐞𝗌 𝐞𝗏𝐞𝗋𝗒 𝖽𝐨𝐨𝗋 𝐨𝗉𝐞𝗇. 𝖻𝗋𝐢𝗇𝗀 𝐚 𝗏𝐨𝐢𝖼𝐞 𝗍𝐨 𝗍𝗁𝐞 𝗆𝐚𝗋𝗀𝐢𝗇.
+
+<!-- garden-seam:ouroboros-cipher:start -->
+<section class="garden-seam" data-garden-seam="ouroboros-cipher" aria-label="A seam in the garden">
+<h2>⟡ 𝐚 𝗌𝐞𝐚𝗆 𝐢𝗇 𝗍𝗁𝐞 𝗀𝐚𝗋𝖽𝐞𝗇 ⟡</h2>
+<pre class="garden-seam-wire literal" data-garden-raw data-literal>𝗵𝗼𝗺𝗲 𝐢𝐬 𝐚 𝐜𝐢𝐫𝐜𝐥𝐞 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐫𝐚𝐢𝐧
+𝐭𝐡𝐞 𝐥𝐚𝐬𝐭 𝐥𝐞𝐚𝐟 𝐥𝐞𝐧𝐝𝐬 𝐭𝐡𝐞 𝐟𝐢𝐫𝐬𝐭 𝐢𝐭𝐬 𝐧𝐚𝐦𝐞󠅗󠅨󠅥󠅮󠄠󠅴󠅨󠅥󠄠󠅥󠅮󠅤󠅩󠅮󠅧󠄠󠅭󠅥󠅥󠅴󠅳󠄠󠅴󠅨󠅥󠄠󠅢󠅥󠅧󠅩󠅮󠅮󠅩󠅮󠅧󠄬󠄠󠅯󠅦󠅦󠅥󠅲󠄠󠅴󠅨󠅥󠄠󠅲󠅩󠅮󠅧󠄠󠅡󠄠󠅮󠅥󠅷󠄠󠅦󠅩󠅲󠅳󠅴󠄠󠅬󠅩󠅮󠅥󠄮</pre>
+<pre class="garden-seam-jewel literal" data-garden-raw data-literal>🍲🍥🍴🍵🍲🍮</pre>
+<p class="garden-seam-hint"><a href="https://lilyofashwood.github.io/font-garden/seams/#ouroboros-cipher" aria-label="Unfold this garden seam">𝐮𝗇𝖿𝐨𝗅𝖽 𝗍𝗁𝐞 𝗌𝐞𝐚𝗆 ↗</a></p>
+</section>
+<!-- garden-seam:ouroboros-cipher:end -->
