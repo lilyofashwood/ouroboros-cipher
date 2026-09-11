@@ -1,4 +1,4 @@
-# 🐍 𝕺𝖚𝖗𝖔𝖇𝖔𝖗𝖔𝖘
+# 🐍 𝐨𝐮𝗋𝐨𝖻𝐨𝗋𝐨𝗌
 
 *The message is the key. The end is the beginning.*
 
@@ -35,7 +35,7 @@ Historical credit is shared: Lily supplied the dreams, intentions, and direction
 
 ## A lantern in the margin
 
-This new passage carries a small StegWeb Two Plains Easter egg. Decode only its marked Markdown region with the companion [StegWeb workshop](https://github.com/lilyofashwood/steg.web); the surrounding title styles and code are not part of its channel.
+This new passage carries a small StegWeb Two Plains Easter egg. Decode only its marked Markdown region with [Uniception, the renamed StegWeb workshop](https://github.com/lilyofashwood/uniception); the surrounding title styles and code are not part of its channel. The collection itself now lives in [steg.web](https://github.com/lilyofashwood/steg.web).
 
 <!-- stegweb:legacy:two_plains:start -->
 𝖱𝖾𝗍𝗎𝗋𝗇 with light, said the last letter to the first. A serpent slept around the margin while the page considered every possible beginning. No voice was thrown away merely because another sounded sweeter.
