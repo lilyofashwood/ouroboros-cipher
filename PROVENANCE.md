@@ -10,4 +10,4 @@ The shared recovered inventory attributes conceptual direction to Lily and imple
 
 New on September 10, 2026: scalar-safe `core.js`, local browser UI without React/CDN dependencies, CLI, strict input outcomes, exhaustive one/two-letter ring checks, Unicode tests, historical-output comparison, and this documentation. The original SVG geometry and teal/violet/rose palette informed the standalone interface.
 
-The public `lilyofashwood/ouroboros-cipher` destination was reported empty in the handoff. This edition is staged for private owner review; no public-release or license claim is made here. Original source has also been preserved in the workspace's dated archive.
+The recovered handoff records an empty destination on September 10, 2026; that dated observation is not a statement of current repository status. This continuation is prepared for source publication in the canonical `lilyofashwood/ouroboros-cipher` repository. No license has been selected; source publication does not grant a reuse license. Original source remains preserved in the workspace's dated archive.

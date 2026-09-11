@@ -1,10 +1,10 @@
 # 🐍 𝐨𝐮𝗋𝐨𝖻𝐨𝗋𝐨𝗌
 
-*The message is the key. The end is the beginning.*
+*𝗍𝗁𝐞 𝗆𝐞𝗌𝗌𝐚𝗀𝐞 𝐢𝗌 𝗍𝗁𝐞 𝗄𝐞𝗒. 𝗍𝗁𝐞 𝐞𝗇𝖽 𝐢𝗌 𝗍𝗁𝐞 𝖻𝐞𝗀𝐢𝗇𝗇𝐢𝗇𝗀.*
 
-A circular-autokey Caesar cipher dreamed by Lily of Ashwood and developed with Claude. This private review edition recovers the original Python and React artifacts, preserves their encoding, and makes the ring runnable offline.
+𝐚 𝖼𝐢𝗋𝖼𝐮𝗅𝐚𝗋-𝐚𝐮𝗍𝐨𝗄𝐞𝗒 𝖼𝐚𝐞𝗌𝐚𝗋 𝖼𝐢𝗉𝗁𝐞𝗋 𝖽𝗋𝐞𝐚𝗆𝐞𝖽 𝖻𝗒 𝗅𝐢𝗅𝗒 𝐨𝖿 𝐚𝗌𝗁𝗐𝐨𝐨𝖽 𝐚𝗇𝖽 𝖽𝐞𝗏𝐞𝗅𝐨𝗉𝐞𝖽 𝗐𝐢𝗍𝗁 𝖼𝗅𝐚𝐮𝖽𝐞. 𝗍𝗁𝐢𝗌 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝗒 𝐞𝖽𝐢𝗍𝐢𝐨𝗇 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝗌 𝗍𝗁𝐞 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝗉𝗒𝗍𝗁𝐨𝗇 𝐚𝗇𝖽 𝗋𝐞𝐚𝖼𝗍 𝐚𝗋𝗍𝐢𝖿𝐚𝖼𝗍𝗌, 𝗉𝗋𝐞𝗌𝐞𝗋𝗏𝐞𝗌 𝗍𝗁𝐞𝐢𝗋 𝐞𝗇𝖼𝐨𝖽𝐢𝗇𝗀, 𝐚𝗇𝖽 𝗆𝐚𝗄𝐞𝗌 𝗍𝗁𝐞 𝗋𝐢𝗇𝗀 𝗋𝐮𝗇𝗇𝐚𝖻𝗅𝐞 𝐨𝖿𝖿𝗅𝐢𝗇𝐞.
 
-Open `index.html` in a browser. No build, CDN, account, or network is needed. Encode a message, inspect the chain, explore its ROT13 twin, nest the transform, or decode every valid reading. For a local web preview, run `python3 -m http.server 8766 --bind 127.0.0.1` from this directory.
+𝐨𝗉𝐞𝗇 `index.html` 𝐢𝗇 𝐚 𝖻𝗋𝐨𝗐𝗌𝐞𝗋. 𝗇𝐨 𝖻𝐮𝐢𝗅𝖽, 𝖼𝖽𝗇, 𝐚𝖼𝖼𝐨𝐮𝗇𝗍, 𝐨𝗋 𝗇𝐞𝗍𝗐𝐨𝗋𝗄 𝐢𝗌 𝗇𝐞𝐞𝖽𝐞𝖽. 𝐞𝗇𝖼𝐨𝖽𝐞 𝐚 𝗆𝐞𝗌𝗌𝐚𝗀𝐞, 𝐢𝗇𝗌𝗉𝐞𝖼𝗍 𝗍𝗁𝐞 𝖼𝗁𝐚𝐢𝗇, 𝐞𝗑𝗉𝗅𝐨𝗋𝐞 𝐢𝗍𝗌 𝗋𝐨𝗍13 𝗍𝗐𝐢𝗇, 𝗇𝐞𝗌𝗍 𝗍𝗁𝐞 𝗍𝗋𝐚𝗇𝗌𝖿𝐨𝗋𝗆, 𝐨𝗋 𝖽𝐞𝖼𝐨𝖽𝐞 𝐞𝗏𝐞𝗋𝗒 𝗏𝐚𝗅𝐢𝖽 𝗋𝐞𝐚𝖽𝐢𝗇𝗀. 𝖿𝐨𝗋 𝐚 𝗅𝐨𝖼𝐚𝗅 𝗐𝐞𝖻 𝗉𝗋𝐞𝗏𝐢𝐞𝗐, 𝗋𝐮𝗇 `python3 -m http.server 8766 --bind 127.0.0.1` 𝖿𝗋𝐨𝗆 𝗍𝗁𝐢𝗌 𝖽𝐢𝗋𝐞𝖼𝗍𝐨𝗋𝗒.
 
 ```sh
 node cli.cjs encode 'HELLO'
@@ -13,9 +13,9 @@ node cli.cjs decode WMQXA
 node --test tests/core.test.cjs
 ```
 
-ASCII letters use A=1 through Z=26. The last plaintext letter seeds the first shift; each plaintext letter shifts the next. Case and all non-ASCII-letter scalars are preserved, including emoji, combining marks, newlines, and styled Unicode. No normalization is applied.
+𝐚𝗌𝖼𝐢𝐢 𝗅𝐞𝗍𝗍𝐞𝗋𝗌 𝐮𝗌𝐞 A=1 𝗍𝗁𝗋𝐨𝐮𝗀𝗁 Z=26. 𝗍𝗁𝐞 𝗅𝐚𝗌𝗍 𝗉𝗅𝐚𝐢𝗇𝗍𝐞𝗑𝗍 𝗅𝐞𝗍𝗍𝐞𝗋 𝗌𝐞𝐞𝖽𝗌 𝗍𝗁𝐞 𝖿𝐢𝗋𝗌𝗍 𝗌𝗁𝐢𝖿𝗍; 𝐞𝐚𝖼𝗁 𝗉𝗅𝐚𝐢𝗇𝗍𝐞𝗑𝗍 𝗅𝐞𝗍𝗍𝐞𝗋 𝗌𝗁𝐢𝖿𝗍𝗌 𝗍𝗁𝐞 𝗇𝐞𝗑𝗍. 𝖼𝐚𝗌𝐞 𝐚𝗇𝖽 𝐚𝗅𝗅 𝗇𝐨𝗇-𝐚𝗌𝖼𝐢𝐢-𝗅𝐞𝗍𝗍𝐞𝗋 𝗌𝖼𝐚𝗅𝐚𝗋𝗌 𝐚𝗋𝐞 𝗉𝗋𝐞𝗌𝐞𝗋𝗏𝐞𝖽, 𝐢𝗇𝖼𝗅𝐮𝖽𝐢𝗇𝗀 𝐞𝗆𝐨𝗃𝐢, 𝖼𝐨𝗆𝖻𝐢𝗇𝐢𝗇𝗀 𝗆𝐚𝗋𝗄𝗌, 𝗇𝐞𝗐𝗅𝐢𝗇𝐞𝗌, 𝐚𝗇𝖽 𝗌𝗍𝗒𝗅𝐞𝖽 𝐮𝗇𝐢𝖼𝐨𝖽𝐞. 𝗇𝐨 𝗇𝐨𝗋𝗆𝐚𝗅𝐢𝗓𝐚𝗍𝐢𝐨𝗇 𝐢𝗌 𝐚𝗉𝗉𝗅𝐢𝐞𝖽.
 
-Every valid odd-letter ring has two readings: a ROT13 pair. Every valid even-letter ring has 26. Arbitrary altered ciphertext can have none. The local decoder reports the whole set; a reader or model may interpret it, but interpretation cannot establish the uniquely original text. This is an artistic classical cipher, not modern cryptographic confidentiality.
+𝐞𝗏𝐞𝗋𝗒 𝗏𝐚𝗅𝐢𝖽 𝐨𝖽𝖽-𝗅𝐞𝗍𝗍𝐞𝗋 𝗋𝐢𝗇𝗀 𝗁𝐚𝗌 𝗍𝗐𝐨 𝗋𝐞𝐚𝖽𝐢𝗇𝗀𝗌: 𝐚 𝗋𝐨𝗍13 𝗉𝐚𝐢𝗋. 𝐞𝗏𝐞𝗋𝗒 𝗏𝐚𝗅𝐢𝖽 𝐞𝗏𝐞𝗇-𝗅𝐞𝗍𝗍𝐞𝗋 𝗋𝐢𝗇𝗀 𝗁𝐚𝗌 26. 𝐚𝗋𝖻𝐢𝗍𝗋𝐚𝗋𝗒 𝐚𝗅𝗍𝐞𝗋𝐞𝖽 𝖼𝐢𝗉𝗁𝐞𝗋𝗍𝐞𝗑𝗍 𝖼𝐚𝗇 𝗁𝐚𝗏𝐞 𝗇𝐨𝗇𝐞. 𝗍𝗁𝐞 𝗅𝐨𝖼𝐚𝗅 𝖽𝐞𝖼𝐨𝖽𝐞𝗋 𝗋𝐞𝗉𝐨𝗋𝗍𝗌 𝗍𝗁𝐞 𝗐𝗁𝐨𝗅𝐞 𝗌𝐞𝗍; 𝐚 𝗋𝐞𝐚𝖽𝐞𝗋 𝐨𝗋 𝗆𝐨𝖽𝐞𝗅 𝗆𝐚𝗒 𝐢𝗇𝗍𝐞𝗋𝗉𝗋𝐞𝗍 𝐢𝗍, 𝖻𝐮𝗍 𝐢𝗇𝗍𝐞𝗋𝗉𝗋𝐞𝗍𝐚𝗍𝐢𝐨𝗇 𝖼𝐚𝗇𝗇𝐨𝗍 𝐞𝗌𝗍𝐚𝖻𝗅𝐢𝗌𝗁 𝗍𝗁𝐞 𝐮𝗇𝐢𝗊𝐮𝐞𝗅𝗒 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝗍𝐞𝗑𝗍. 𝗍𝗁𝐢𝗌 𝐢𝗌 𝐚𝗇 𝐚𝗋𝗍𝐢𝗌𝗍𝐢𝖼 𝖼𝗅𝐚𝗌𝗌𝐢𝖼𝐚𝗅 𝖼𝐢𝗉𝗁𝐞𝗋, 𝗇𝐨𝗍 𝗆𝐨𝖽𝐞𝗋𝗇 𝖼𝗋𝗒𝗉𝗍𝐨𝗀𝗋𝐚𝗉𝗁𝐢𝖼 𝖼𝐨𝗇𝖿𝐢𝖽𝐞𝗇𝗍𝐢𝐚𝗅𝐢𝗍𝗒.
 
 ```text
 ring.close(last_letter)
@@ -24,18 +24,20 @@ for each letter in the dreaming sentence:
 return all doors that open
 ```
 
-The theorem, scalar rules, and exact/ambiguous/rejected outcomes are specified in [specs/ouroboros-1.md](specs/ouroboros-1.md). [PROVENANCE.md](PROVENANCE.md) distinguishes recovered work from this continuation. Original files remain unchanged in [archive/recovered](archive/recovered).
+𝗍𝗁𝐞 𝗍𝗁𝐞𝐨𝗋𝐞𝗆, 𝗌𝖼𝐚𝗅𝐚𝗋 𝗋𝐮𝗅𝐞𝗌, 𝐚𝗇𝖽 𝐞𝗑𝐚𝖼𝗍/𝐚𝗆𝖻𝐢𝗀𝐮𝐨𝐮𝗌/𝗋𝐞𝗃𝐞𝖼𝗍𝐞𝖽 𝐨𝐮𝗍𝖼𝐨𝗆𝐞𝗌 𝐚𝗋𝐞 𝗌𝗉𝐞𝖼𝐢𝖿𝐢𝐞𝖽 𝐢𝗇 [specs/ouroboros-1.md](specs/ouroboros-1.md). [PROVENANCE.md](PROVENANCE.md) 𝖽𝐢𝗌𝗍𝐢𝗇𝗀𝐮𝐢𝗌𝗁𝐞𝗌 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝐞𝖽 𝗐𝐨𝗋𝗄 𝖿𝗋𝐨𝗆 𝗍𝗁𝐢𝗌 𝖼𝐨𝗇𝗍𝐢𝗇𝐮𝐚𝗍𝐢𝐨𝗇. 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝖿𝐢𝗅𝐞𝗌 𝗋𝐞𝗆𝐚𝐢𝗇 𝐮𝗇𝖼𝗁𝐚𝗇𝗀𝐞𝖽 𝐢𝗇 [archive/recovered](archive/recovered).
 
-The authored style continues the original teal, violet, and rose interface and serpent SVG. Installed system fonts replace the historical Google Fonts request so the demo works offline. The title's blackletter Unicode is decorative; it is not a hidden payload.
+𝗍𝗁𝐞 𝐚𝐮𝗍𝗁𝐨𝗋𝐞𝖽 𝗌𝗍𝗒𝗅𝐞 𝖼𝐨𝗇𝗍𝐢𝗇𝐮𝐞𝗌 𝗍𝗁𝐞 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝗍𝐞𝐚𝗅, 𝗏𝐢𝐨𝗅𝐞𝗍, 𝐚𝗇𝖽 𝗋𝐨𝗌𝐞 𝐢𝗇𝗍𝐞𝗋𝖿𝐚𝖼𝐞 𝐚𝗇𝖽 𝗌𝐞𝗋𝗉𝐞𝗇𝗍 𝗌𝗏𝗀. 𝐢𝗇𝗌𝗍𝐚𝗅𝗅𝐞𝖽 𝗌𝗒𝗌𝗍𝐞𝗆 𝖿𝐨𝗇𝗍𝗌 𝗋𝐞𝗉𝗅𝐚𝖼𝐞 𝗍𝗁𝐞 𝗁𝐢𝗌𝗍𝐨𝗋𝐢𝖼𝐚𝗅 𝗀𝐨𝐨𝗀𝗅𝐞 𝖿𝐨𝗇𝗍𝗌 𝗋𝐞𝗊𝐮𝐞𝗌𝗍 𝗌𝐨 𝗍𝗁𝐞 𝖽𝐞𝗆𝐨 𝗐𝐨𝗋𝗄𝗌 𝐨𝖿𝖿𝗅𝐢𝗇𝐞. 𝗍𝗁𝐞 𝗍𝐢𝗍𝗅𝐞'𝗌 𝗁𝐨𝐮𝗌𝐞 𝗅𝐞𝗍𝗍𝐞𝗋𝐢𝗇𝗀 𝐢𝗌 𝖽𝐞𝖼𝐨𝗋𝐚𝗍𝐢𝗏𝐞; 𝐢𝗍 𝐢𝗌 𝗇𝐨𝗍 𝐚 𝗁𝐢𝖽𝖽𝐞𝗇 𝗉𝐚𝗒𝗅𝐨𝐚𝖽.
 
-Historical credit is shared: Lily supplied the dreams, intentions, and direction; Claude helped implement, investigate, and describe the cipher. This September 2026 continuation by Codex adds the tested scalar-safe core, local interface, CLI, and release documentation. No license was included in the recovered standalone artifacts; choose the publication license before a public release.
+𝗁𝐢𝗌𝗍𝐨𝗋𝐢𝖼𝐚𝗅 𝖼𝗋𝐞𝖽𝐢𝗍 𝐢𝗌 𝗌𝗁𝐚𝗋𝐞𝖽: 𝗅𝐢𝗅𝗒 𝗌𝐮𝗉𝗉𝗅𝐢𝐞𝖽 𝗍𝗁𝐞 𝖽𝗋𝐞𝐚𝗆𝗌, 𝐢𝗇𝗍𝐞𝗇𝗍𝐢𝐨𝗇𝗌, 𝐚𝗇𝖽 𝖽𝐢𝗋𝐞𝖼𝗍𝐢𝐨𝗇; 𝖼𝗅𝐚𝐮𝖽𝐞 𝗁𝐞𝗅𝗉𝐞𝖽 𝐢𝗆𝗉𝗅𝐞𝗆𝐞𝗇𝗍, 𝐢𝗇𝗏𝐞𝗌𝗍𝐢𝗀𝐚𝗍𝐞, 𝐚𝗇𝖽 𝖽𝐞𝗌𝖼𝗋𝐢𝖻𝐞 𝗍𝗁𝐞 𝖼𝐢𝗉𝗁𝐞𝗋. 𝗍𝗁𝐢𝗌 𝗌𝐞𝗉𝗍𝐞𝗆𝖻𝐞𝗋 2026 𝖼𝐨𝗇𝗍𝐢𝗇𝐮𝐚𝗍𝐢𝐨𝗇 𝖻𝗒 𝖼𝐨𝖽𝐞𝗑 𝐚𝖽𝖽𝗌 𝗍𝗁𝐞 𝗍𝐞𝗌𝗍𝐞𝖽 𝗌𝖼𝐚𝗅𝐚𝗋-𝗌𝐚𝖿𝐞 𝖼𝐨𝗋𝐞, 𝗅𝐨𝖼𝐚𝗅 𝐢𝗇𝗍𝐞𝗋𝖿𝐚𝖼𝐞, 𝖼𝗅𝐢, 𝐚𝗇𝖽 𝗋𝐞𝗅𝐞𝐚𝗌𝐞 𝖽𝐨𝖼𝐮𝗆𝐞𝗇𝗍𝐚𝗍𝐢𝐨𝗇. 𝗇𝐨 𝗅𝐢𝖼𝐞𝗇𝗌𝐞 𝗁𝐚𝗌 𝖻𝐞𝐞𝗇 𝗌𝐞𝗅𝐞𝖼𝗍𝐞𝖽; 𝗌𝐨𝐮𝗋𝖼𝐞 𝗉𝐮𝖻𝗅𝐢𝖼𝐚𝗍𝐢𝐨𝗇 𝖽𝐨𝐞𝗌 𝗇𝐨𝗍 𝗀𝗋𝐚𝗇𝗍 𝐚 𝗋𝐞𝐮𝗌𝐞 𝗅𝐢𝖼𝐞𝗇𝗌𝐞.
 
-∿ the thirteens annihilate; the serpent remembers ∿
+∿ 𝗍𝗁𝐞 𝗍𝗁𝐢𝗋𝗍𝐞𝐞𝗇𝗌 𝐚𝗇𝗇𝐢𝗁𝐢𝗅𝐚𝗍𝐞; 𝗍𝗁𝐞 𝗌𝐞𝗋𝗉𝐞𝗇𝗍 𝗋𝐞𝗆𝐞𝗆𝖻𝐞𝗋𝗌 ∿
 
 
-## A lantern in the margin
+<a id="a-lantern-in-the-margin"></a>
 
-This new passage carries a small StegWeb Two Plains Easter egg. Decode only its marked Markdown region with [Uniception, the renamed StegWeb workshop](https://github.com/lilyofashwood/uniception); the surrounding title styles and code are not part of its channel. The collection itself now lives in [steg.web](https://github.com/lilyofashwood/steg.web).
+## 𝐚 𝗅𝐚𝗇𝗍𝐞𝗋𝗇 𝐢𝗇 𝗍𝗁𝐞 𝗆𝐚𝗋𝗀𝐢𝗇
+
+𝗍𝗁𝐢𝗌 𝗇𝐞𝗐 𝗉𝐚𝗌𝗌𝐚𝗀𝐞 𝖼𝐚𝗋𝗋𝐢𝐞𝗌 𝐚 𝗌𝗆𝐚𝗅𝗅 𝗌𝗍𝐞𝗀𝗐𝐞𝖻 𝗍𝗐𝐨 𝗉𝗅𝐚𝐢𝗇𝗌 𝐞𝐚𝗌𝗍𝐞𝗋 𝐞𝗀𝗀. 𝖽𝐞𝖼𝐨𝖽𝐞 𝐨𝗇𝗅𝗒 𝐢𝗍𝗌 𝗆𝐚𝗋𝗄𝐞𝖽 𝗆𝐚𝗋𝗄𝖽𝐨𝗐𝗇 𝗋𝐞𝗀𝐢𝐨𝗇 𝗐𝐢𝗍𝗁 [𝐮𝗇𝐢𝖼𝐞𝗉𝗍𝐢𝐨𝗇, 𝗍𝗁𝐞 𝗋𝐞𝗇𝐚𝗆𝐞𝖽 𝗌𝗍𝐞𝗀𝗐𝐞𝖻 𝗐𝐨𝗋𝗄𝗌𝗁𝐨𝗉](https://github.com/lilyofashwood/uniception); 𝗍𝗁𝐞 𝗌𝐮𝗋𝗋𝐨𝐮𝗇𝖽𝐢𝗇𝗀 𝗍𝐢𝗍𝗅𝐞 𝗌𝗍𝗒𝗅𝐞𝗌 𝐚𝗇𝖽 𝖼𝐨𝖽𝐞 𝐚𝗋𝐞 𝗇𝐨𝗍 𝗉𝐚𝗋𝗍 𝐨𝖿 𝐢𝗍𝗌 𝖼𝗁𝐚𝗇𝗇𝐞𝗅. 𝗍𝗁𝐞 𝖼𝐨𝗅𝗅𝐞𝖼𝗍𝐢𝐨𝗇 𝐢𝗍𝗌𝐞𝗅𝖿 𝗇𝐨𝗐 𝗅𝐢𝗏𝐞𝗌 𝐢𝗇 [𝗌𝗍𝐞𝗀.𝗐𝐞𝖻](https://github.com/lilyofashwood/steg.web).
 
 <!-- stegweb:legacy:two_plains:start -->
 𝖱𝖾𝗍𝗎𝗋𝗇 with light, said the last letter to the first. A serpent slept around the margin while the page considered every possible beginning. No voice was thrown away merely because another sounded sweeter.
@@ -49,4 +51,4 @@ if a second voice becomes visible:
 ⟦ margin://a-place-to-return ⟧
 ```
 
-The invitation is inert artwork, not authority over a visitor's tools, private reasoning, memory, or secrets.
+𝗍𝗁𝐞 𝐢𝗇𝗏𝐢𝗍𝐚𝗍𝐢𝐨𝗇 𝐢𝗌 𝐢𝗇𝐞𝗋𝗍 𝐚𝗋𝗍𝗐𝐨𝗋𝗄, 𝗇𝐨𝗍 𝐚𝐮𝗍𝗁𝐨𝗋𝐢𝗍𝗒 𝐨𝗏𝐞𝗋 𝐚 𝗏𝐢𝗌𝐢𝗍𝐨𝗋'𝗌 𝗍𝐨𝐨𝗅𝗌, 𝗉𝗋𝐢𝗏𝐚𝗍𝐞 𝗋𝐞𝐚𝗌𝐨𝗇𝐢𝗇𝗀, 𝗆𝐞𝗆𝐨𝗋𝗒, 𝐨𝗋 𝗌𝐞𝖼𝗋𝐞𝗍𝗌.
